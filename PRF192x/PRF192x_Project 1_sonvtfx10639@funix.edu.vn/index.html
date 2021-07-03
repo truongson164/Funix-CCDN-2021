@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Style phần thông tin -->
+    <style>
+        #name, #city, #mobile, #age, #job, #email {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Click the button to display an alert box.</p>
+    <button onclick="notify()">Try it</button>
+    <!-- Thông tin của bạn -->
+    <p id="name" ></p>
+    <p id="city"></p>
+    <p id="mobile"></p>
+    <p id="age"></p>
+    <p id="job"></p>
+    <p id="email"></p>
+
+    <p id="button" style="display: none">
+        <button>Bước tiếp theo</button>
+    </p>
+
+    <script>
+        // Hàm tính tuổi
+        function calculate(year, currentYear){
+            return age = currentYear - year;
+        } 
+
+        // Hàm nhập thông tin và hiển thị
+        function notify() {
+            // nhập thông tin
+            alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
+            var name = prompt("Hãy nhập tên của bạn:", "Son");
+            var city = prompt("Hãy nhập thành phố của bạn:", "Hai Phong");
+            var mobile = prompt("Hãy nhập số điện thoại:", "0902032927");
+            var email = prompt("Hãy nhập email của bạn:", "example@gmail.com");
+            var job = prompt("Hãy nhập công việc của bạn:", "Developer");
+
+            // nhập lại năm sinh nếu lớn hơn năm hiện tại
+            var currentYear = new Date().getFullYear();
+            var year = prompt("Hãy nhập năm sinh của bạn:", 1996);
+            while (year >= currentYear || isNaN(year)) {
+                year = prompt("Nhập lại năm sinh của bạn:", 1996);
+            }
+
+            //Gọi hàm tính tuổi 
+            calculate(year, currentYear);
+            
+            // Hiển thị thông tin
+            document.getElementById("name").innerHTML = "Tên: " + name;
+            document.getElementById("city").innerHTML = "Thành phố: " + city;
+            document.getElementById("mobile").innerHTML = "Số điện thoại: " + mobile;
+            document.getElementById("age").innerHTML = "Tuổi: " + age;
+            document.getElementById("email").innerHTML = "E-mail của bạn: " + email;
+			document.getElementById("job").innerHTML = "Công việc: " + job;	
+
+            document.getElementById("button").style.display = "block";
+            
+        }
+
+    </script>
+</body>
+
+</html>

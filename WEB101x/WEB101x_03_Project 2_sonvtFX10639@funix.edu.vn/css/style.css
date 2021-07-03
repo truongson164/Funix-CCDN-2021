@@ -1,0 +1,582 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Varela Round', sans-serif;
+    min-width: 345px;
+}
+.fa-minus {
+    color: blue;
+    width: 20px;
+    font-size: larger;
+}
+label {
+    display: none;
+}
+h2 {
+    margin:0;
+}
+h4 a, h4 i, a {
+    color:black;
+}
+a {
+    text-decoration: none;
+}
+body{
+    margin:0;
+}
+.footer-info-form input {
+    width: 60%;
+}
+]
+label {
+    display: none;
+}
+.header{
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.navbar-container {
+    display: initial;
+}
+h2{
+    font-weight: normal;
+    font-size: medium;
+}   
+
+.icon-hrul, .icon-search {
+    width:30%;
+    font-size: 24px;
+    color:darkgray;
+    display: inline-block;
+    text-align: center;
+}
+.icon-search{
+    float: right;
+}
+
+.icon-hrul {
+    float: left;
+}
+.navbar-menu{
+    
+    display: none;
+}
+/*  */
+
+.navbar-brand, .navbar-link {
+    color: blue;
+    text-decoration: none;
+}
+.navbar-brand-div {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.navbar-link, .navbar-home  {
+    text-decoration: none;
+}
+
+.navbar-list{
+   display:none;
+   list-style-type: none;
+}
+
+
+/*  */
+.banner{
+    
+ }
+ .banner-img{   
+     width:100%;
+ }
+.about-us{
+    padding:10px 25px 0 25px;
+}
+.about-us-container {
+    
+}
+#about-text-firt {
+    font-weight: bold;
+    font-size: x-large;
+
+}
+.about-us-div-img {
+  
+}
+.about-us-img {    
+    width: 100%;
+  object-fit: contain;
+}
+.our-business {
+    background-image: url(https://i.imgur.com/YE6srBq.jpg);
+    padding: 20px;
+}
+.our-business a, #our-business-consulting p, #our-business-business p, #our-business-consulting p a, #our-business-business p a  {
+    text-decoration: none;
+    color: white;
+}
+#our-business-title{
+    text-align: center  ;
+    
+}
+#our-business-consulting, #our-business-business{
+    text-align: center;
+}
+#our-business-consulting a, #our-business-business a{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.picture-container{
+    padding:25px 25px 0 25px;
+}
+.picture-left {
+    width: 100%;    
+}
+.picture-right {
+    display:none;
+}
+.our-business-list{
+    list-style-type: none;
+}
+.picture-container > a, .our-business-list > a{
+    text-decoration: none;
+}
+.our-business-container {
+    display: flex;
+    align-items:center;
+    left: -30px;
+    position:absolute;
+
+}
+
+.our-business-container img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    
+}
+
+
+.news {
+    margin:20px 25px 20px 25px;
+}
+.news-container{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+}
+.news-img {
+    width: 100%;
+    min-width: 100px;
+    object-fit: cover;
+}
+.news-card{
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.news-card-text{
+    padding: 0 20px 20px;
+}
+h4 a{
+    text-decoration: none;
+}
+
+.contacts-container{
+    display: flex;
+    align-items:center;
+    margin:20px 25px 20px 25px;
+    flex-wrap: wrap;
+}
+.contacts-card{
+    flex: 0 0 100%;
+    
+}
+.contacts-card img {
+    max-width: 100%;
+}
+.contacts-card div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contacts-card p{
+    font-size:larger
+}
+.contacts-card textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.contacts-card input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.contacts-card-button{
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.footer-info-container {
+    display: flex;
+    align-items:flex-start;
+    margin:20px 25px 20px 25px;
+    flex-wrap: wrap;
+}
+.footer-info {
+    margin: 5px;
+    min-width: 250px;
+}
+.footer {
+    background-color: #252525;
+    display: flex;
+}
+footer p, footer h2, footer li, footer a {
+    color:white;
+    text-decoration: none;
+}
+.footer-info ul{
+    list-style-position: inside;
+    list-style-type: '› ';
+    padding-left:0;
+}
+.footer-info h2{
+    font-weight:lighter;
+    font-size:18px;
+}
+.footer-info-form input{
+    border-radius: 10%;
+    padding: 5px;
+    
+}
+
+.copyright-container {
+    padding: 4px;
+    text-align: center;
+    background-color: #252525;
+    margin-top: 1px;    
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .header {
+        background-color: blue;
+    }
+    .navbar-link, .navbar-home {
+        text-decoration: initial;
+        display:initial;
+    }     
+    .navbar-brand-div {
+        text-align: left;
+        width:fit-content;
+    }  
+    .navbar-brand{
+        color: white; 
+    }
+    .icon-hrul {
+        display: none;
+    }
+    .icon-search{
+        width: 25%;
+        display:none;
+    }
+   
+    .navbar-list{
+        padding: 0;
+    }
+  
+    .navbar-menu {
+        display: inline-block;
+        
+        text-align: right;
+    }
+    .navbar-link{
+        color: #e0cd21;
+    }
+    .navbar-home{
+        color: #ff5200;
+        text-decoration: none;
+    }
+    .navbar-list{
+       margin:0;
+       display: initial;
+    }
+    
+    .navbar-list li{
+        margin-left: 10px;
+    }
+     .about-us{
+        padding: 25px 25px 25px 25px;
+       
+    }
+    .navbar-item {
+        display: inline-block;
+        font-size:small
+    }
+   
+    .about-us-text {
+        padding-right: 20px;
+        width: 50%;
+        
+    }
+    .about-us-container {
+        display: inline-flex;   
+        
+    }
+    .about-us-div-img{
+        width: 50%;
+    }
+    .about-us-img {
+        object-fit:cover;
+        align-items: flex-start;
+    }
+
+
+    .news {
+        margin:20px 25px 20px 25px;
+    }
+    .news-container{
+        display: flex;
+        align-items:flex-start;
+        flex-wrap:wrap ;
+    }
+    .news-img {
+        max-width: 100%;
+        min-width: 200px;
+    }
+    .news-card{
+        flex: 0 0 30%;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    }
+    .news-card-text{
+        padding: 0 20px 20px;
+    }
+    h4 a{
+        text-decoration: none;
+    }
+    .contacts-container{
+        display: flex;
+        align-items:flex-start;
+        margin:20px 25px 20px 25px;
+    }
+    .contacts-card{
+        flex: 0 0 50%;
+    }
+    .contacts-card img {
+        padding-left: 20px;
+    }
+    
+    .contacts-card textarea {
+        flex: 1;
+    }
+    .footer-info-container {
+        display: flex;
+        align-items:flex-start;
+        margin:20px 25px 20px 25px;
+    }
+    .footer-info {
+        margin: 5px;
+        min-width: 200px;
+        max-width: 25%;
+    }
+    .footer {
+        background-color: #252525;
+        display: flex;
+    }
+    footer p, footer h2, footer li, footer a {
+        color:white;
+        text-decoration: none;
+    }
+    .footer-info ul{
+        list-style-position: inside;
+        list-style-type: '› ';
+        padding-left:0;
+    }
+    .footer-info h2{
+        font-weight:lighter;
+        font-size:18px;
+    }
+    
+    .copyright-container {
+        padding: 4px;
+        text-align: center;
+        background-color: #252525;
+        margin-top: 1px;    
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .picture {
+        display: flex;
+        min-height: 500px;
+    }
+    .navbar-container{
+        margin: 0 200px 0 200px;
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    .navbar-list li{
+        margin-left: 10px;
+    }
+    .about-us{
+        margin: 20px 200px 20px 200px;
+    }
+    
+    .about-us-text {
+        min-width: 350px;
+        padding-right: 30px; 
+    }
+    .picture-container{
+        padding:25px 0 0 0;
+    }
+    
+    .picture-left {
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+
+    }
+    .picture-right {
+        width: 100%;
+    }
+    .our-business {
+        width: 50%;
+        position: relative;
+        
+    }
+    .picture-left-div {
+        width: 50%;
+    }
+    #our-business-consulting, #our-business-business{
+        text-align:left;
+    }
+    #our-business-business {
+        top: 180px;
+    }
+    .banner {
+       position:relative;
+    }
+    .banner-img{
+        
+        width:100%;
+    }
+    .news {
+        margin:20px 200px 20px 200px;
+    }
+    .news-container{
+        display: flex;
+        align-items:flex-start;
+        flex-wrap:wrap ;
+        justify-content: space-between;
+    }
+    .news-img {
+        max-width: 100%;
+        min-width: 200px;
+    }
+    .news-card{
+        flex: 0 0 30%;
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    }
+    .news-card-text{
+        padding: 0 20px 20px;
+    }
+    h4 a{
+        text-decoration: none;
+    }
+    .contacts-container{
+        display: flex;
+        align-items:flex-start;
+        margin:20px 200px 60px 200px;
+    }
+    .contacts-card{
+        flex: 0 2 50%;
+    }
+    .contacts-card img {
+        max-width: 100%;
+    }
+    .contacts-card  div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .contacts-card input {
+        width: 30%;
+    }
+    .contacts-card textarea {
+        flex: 1;
+    }
+    #button-div {
+        position: relative;
+    }
+    .contacts-card-button {
+        position: absolute;
+        right: -50px;
+    }
+    .footer-info-container {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        margin:20px 200px 20px 200px;
+    }
+    .footer-info {
+        margin: 5px;
+        min-width: 200px;
+    }
+    .footer {
+        background-color: #252525;
+        display: flex;
+    }
+    footer p, footer h2, footer li, footer a {
+        color:white;
+        text-decoration: none;
+    }
+    .footer-info ul{
+        list-style-position: inside;
+        list-style-type: '› ';
+        padding-left:0;
+    }
+    .footer-info h2{
+        font-weight:lighter;
+        font-size:18px;
+    }
+    
+    .copyright-container {
+        padding: 4px;
+        text-align: center;
+        background-color: #252525;
+        margin-top: 1px;    
+    }
+    #our-business-title {
+        text-align: left;
+    }
+    #bout-text-firt {
+        font-size:large;
+    }
+    .fa-search {
+        color: wheat; 
+    }
+    .about-us {
+        padding: 0;
+    }   
+}

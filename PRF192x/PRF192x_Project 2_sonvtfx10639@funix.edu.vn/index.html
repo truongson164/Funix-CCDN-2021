@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: -webkit-center;
+        }
+        td, th {
+            border: 1px solid ;
+            border-color: black !important;
+        }
+        table {
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Marksheet</h1>
+    <!-- Form dien diem hoc sinh -->
+    <form name="Form" onsubmit="add(); return false;">
+        <div>
+            <label for="">Họ tên</label>
+            <input type="text" id="Name">
+        </div><br>
+        <div>
+            <label for="">Điểm toán</label>
+            <input type="text" id="Math" >
+        </div><br>
+        <div>
+            <label for="">Điểm lý</label>
+            <input type="text" id="Physical">
+        </div><br>
+        <div>
+            <label for="">Điểm hóa</label>
+            <input type="text" id="Chemistry">
+        </div><br>
+        <div id="alert"></div>
+        <button type="submit">Nhập</button>
+    </form><br>
+    <!-- Bang diem hoc sinh -->
+    <table id="table">
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Toán</th>
+            <th>Lý</th>
+            <th>Hóa</th>
+            <th>Trung bình</th>
+        </tr>
+    </table>  
+    <!-- Nut an chuc nang -->
+    <button type="submit" onclick="calculateAvg()">Tính điểm trung bình</button>
+    <button type="submit" onclick="show()">Xác định học sinh giỏi</button>
+</body>
+
+</html>
+<script src="./script.js" ></script>

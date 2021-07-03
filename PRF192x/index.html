@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="1">
+    <input type="text" id="2">
+    <button id="b">submit</button>
+</body>
+<script>    
+    var arr = [1, 2,3 ,4, 5];
+    var arr2 = [1, 2,3 ,4, 5, 7];
+    let sum = 0;
+    function cal(array){
+        for(let i =0; i <array.length; i++){
+        
+        if(array[i] % 2 != 0){
+            sum += array[i];
+        }
+        
+        }
+    console.log(sum);
+    }
+    cal(arr);
+    cal(arr2);
+    $("#b").click(function(){
+        $("body").append('<input type="text">');
+    })
+</script>
+</html>

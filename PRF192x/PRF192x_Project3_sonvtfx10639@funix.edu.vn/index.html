@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            text-align: -webkit-center;
+        }
+        td, th {
+            border: 1px solid ;
+            border-color: black !important;
+        }
+        .redText {
+            color: red;
+        }
+        table {
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Marksheet</h1>
+    <!-- Form dien diem hoc sinh -->
+    <form name="Form">
+        <div>
+            <label for="">Họ tên</label>
+            <input type="text" id="Name">
+        </div><br>
+        <div>
+            <label for="">Điểm toán</label>
+            <input type="text" id="Math" >
+        </div><br>
+        <div>
+            <label for="">Điểm lý</label>
+            <input type="text" id="Physical">
+        </div><br>
+        <div>
+            <label for="">Điểm hóa</label>
+            <input type="text" id="Chemistry">
+        </div><br>
+        <div id="alert"></div>
+        <button id="add">Nhập</button>
+    </form><br>
+    <!-- Bang diem hoc sinh -->
+    <table id="table">
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Toán</th>
+            <th>Lý</th>
+            <th>Hóa</th>
+            <th>Trung bình</th>
+        </tr>
+    </table>
+    <!-- Nut an chuc nag -->
+    <button type="submit" id="calculateAvg">Tính điểm trung bình</button>
+    <button type="submit" id="show">Xác định học sinh giỏi</button>
+</body>
+
+</html>
+<script src="./script.js" ></script>
