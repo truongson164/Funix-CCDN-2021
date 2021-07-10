@@ -33,8 +33,9 @@ public class SimpleSort {
                     swap(j, j + 1);
                     swapped = true;
                 }
-                display();
+
             }
+            display();
             if (!swapped){
                 break;
             }

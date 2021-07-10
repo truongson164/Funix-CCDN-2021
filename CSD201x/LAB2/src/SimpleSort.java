@@ -36,6 +36,7 @@ public class SimpleSort {
     }
 
     public void insertSort() {
+
         for (int i=1; i < a.length; i++) {
             int index = i;
             int value = a[i];
